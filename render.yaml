@@ -24,6 +24,8 @@ services:
         fromDatabase:
           name: laravel-db
           property: password
+      - key: DB_PORT
+        value: 5432
 
 databases:
   - name: laravel-db
