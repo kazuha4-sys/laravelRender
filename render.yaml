@@ -6,6 +6,8 @@ services:
     envVars:
       - key: APP_KEY
         generateValue: true
+      - key: DB_CONNECTION
+        value: pgsql
       - key: DB_HOST
         fromDatabase:
           name: laravel-db
@@ -26,3 +28,4 @@ services:
 databases:
   - name: laravel-db
     plan: free
+    engine: postgresql
